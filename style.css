@@ -26,11 +26,11 @@ body {
     color: #fff; }
 
 .vertical, .vertical-white, .vertical-grey {
-  -ms-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  left: 0;
+  -ms-transform: translateX(-50%) rotate(-90deg);
+  -moz-transform: translateX(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+  transform: translateX(-50%) rotate(-90deg);
+  left: 40px;
   top: 50%; }
   .vertical p, .vertical-white p, .vertical-grey p {
     font-size: smaller; }
@@ -165,5 +165,14 @@ body {
 .reasons {
   background: #82ca9c;
   margin-top: -30px; }
+
+.price-list {
+  background: #f6f7fa; }
+  .price-list .item, .price-list .item-legacy, .price-list .item-most-popular {
+    padding: 50px; }
+  .price-list .item-legacy {
+    background: #f6f7fa; }
+  .price-list .item-most-popular {
+    background: #fff; }
 
 /*# sourceMappingURL=style.css.map */

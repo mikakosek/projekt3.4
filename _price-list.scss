@@ -1,0 +1,15 @@
+.price-list {
+    background: $grey-lighter;
+    .item {
+      padding: 50px;
+    }
+    .item-legacy {
+      @extend .item;
+      background: $grey-lighter;
+    }
+    .item-most-popular {
+      @extend .item;
+      background: #fff;
+    }
+
+}

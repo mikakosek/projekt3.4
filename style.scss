@@ -6,11 +6,11 @@
   text-shadow: 1px 1px 2px #000;
 }
 
-@mixin rotate($deg) {
-  -ms-transform: rotate($deg); 
-  -moz-transform: rotate($deg);
-  -webkit-transform: rotate($deg);
-  transform: rotate($deg); 
+@mixin rotate-translate($deg, $x) {
+  -ms-transform: translateX($x) rotate($deg);
+  -moz-transform: translateX($x) rotate($deg);
+  -webkit-transform: translateX($x) rotate($deg);
+  transform: translateX($x) rotate($deg);
 }
 @mixin transition($time) {
   -moz-transition: $time ease;
@@ -20,6 +20,7 @@
 
 $grey-light: #959595;
 $grey-dark: #222626;
+$grey-lighter: #f6f7fa;
 $color-1: #f5989d;
 $color-2: #615f7d;
 $color-3: #bd8cbf;
@@ -52,9 +53,10 @@ body {
   }
 }
 .vertical {
-  @include rotate(-90deg);
-  left: 0;
+  @include rotate-translate(-90deg, -50%);
+  left: 40px;
   top: 50%;
+
   p {
     font-size: smaller;
   }  
@@ -107,3 +109,4 @@ body {
 @import "gallery";
 @import "advertising";
 @import "reasons";
+@import "price-list";
