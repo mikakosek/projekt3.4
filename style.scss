@@ -45,6 +45,12 @@ body {
     color: $grey-dark;
   }
 }
+.paragraph-white{
+  color: #fff;
+  h1 {
+    color: #fff;
+  }
+}
 .vertical {
   @include rotate(-90deg);
   left: 0;
@@ -56,7 +62,7 @@ body {
 .vertical-white {
   @extend .vertical;
   p {
-    color: white;
+    color: #fff;
   }
 }
 .vertical-grey {
@@ -81,6 +87,23 @@ body {
   }
 }
 
+.jumbotron {
+  .slogan {
+    color: white;
+    h1 {
+      font-size: 300%;
+      @include black-thin-shadow;
+    }
+    p {
+      font-size: 100%;
+      @include black-thin-shadow;
+    }
+  } 
+}
+
+
 @import "header";
 @import "description";
 @import "gallery";
+@import "advertising";
+@import "reasons";

@@ -3,36 +3,27 @@
   width: 100%;
   background: blue url("https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?h=350&auto=compress&cs=tinysrgb") center no-repeat;
   background-size: cover;
-}
-.picture {
-  top: 35vh;
-  left: 50vw;
-  img {
-    height: 100vh;
-    width: auto;
+  .picture {
+    top: 35vh;
+    left: 50vw;
+    img {
+      height: 100vh;
+      width: auto;
+    }
   }
-}
-.slogan {
-  top: 50vh;
-  left: 20vw;
-  color: white;
-  width: 25vw;
-  h1 {
-    font-size: 300%;
+  .slogan {
+    top: 50vh;
+    left: 20vw;
+    width: 25vw;
+  }
+  .take {
+    left: 20vw;
+    top: 40px;
+    color: white;
     @include black-thin-shadow;
-  }
-  p {
-    font-size: 100%;
-    @include black-thin-shadow;
-  }
-}
-.take {
-  left: 20vw;
-  top: 40px;
-  color: white;
-  @include black-thin-shadow;
-  .text {
-    font-style: italic;
-    padding-left: 10px;
+    .text {
+      font-style: italic;
+      padding-left: 10px;
+    }
   }
 }
