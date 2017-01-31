@@ -1,7 +1,7 @@
 .price-list {
     background: $grey-lighter;
     .item {
-      padding: 50px;
+      padding: 50px 80px 50px 50px;
     }
     .item-legacy {
       @extend .item;
@@ -10,6 +10,33 @@
     .item-most-popular {
       @extend .item;
       background: #fff;
+      
     }
-
+    .caption {
+      @include border-radius(5%);
+      border: 1px solid transparent;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 10px;
+    }
+    .caption-legacy {
+      @extend .caption;
+      background-color: $grey-light;
+    }
+    .caption-most-popular {
+      @extend .caption;
+      background-color: $purple;
+    }
+    .btn-green {
+      background-color: $green;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 20px;
+    }
+    .icon-grey {
+      color: $grey-light;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 10px 10px 0 0;
+    }
 }

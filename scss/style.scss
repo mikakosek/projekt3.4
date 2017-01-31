@@ -17,10 +17,18 @@
   -webkit-transition: $time ease;
   transition: $time ease;
 }
+@mixin border-radius($deg) {
+  -moz-border-radius: $deg;
+  -webkit-border-radius: $deg;
+  border-radius: $deg;
+}
 
 $grey-light: #959595;
 $grey-dark: #222626;
+$grey-darker: #192431;
 $grey-lighter: #f6f7fa;
+$purple: #bd8cbf;
+$green: #82ca9c;
 $color-1: #e25d7e;
 $color-2: #5e717c;
 $color-3: #bd8cbf;
@@ -53,6 +61,7 @@ body {
     color: #fff;
   }
 }
+
 .vertical {
   @include rotate-translate(-90deg, -50%);
   left: 40px;
@@ -111,3 +120,4 @@ body {
 @import "advertising";
 @import "reasons";
 @import "price-list";
+@import "footer";
