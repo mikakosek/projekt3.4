@@ -1,5 +1,8 @@
 .description {
-  .second-col {
-    padding-top: 35vh;
+    .second-col {
+        padding-top: 35vh;
+        @media (max-width: 991px) {
+            padding-top: 0;
+        }
   }
 }
