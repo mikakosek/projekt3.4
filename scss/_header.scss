@@ -18,7 +18,7 @@
             }
         }
         @media (max-width: 767px) {
-            visibility: hidden;
+            display: none;
         }
     }
     .slogan {
@@ -26,6 +26,15 @@
         left: 20vw;
         width: 25vw;
         min-width: 275px;
+        @media (max-width: 767px) {
+            top: auto;
+            bottom: 10vh;
+        }
+        @media (max-width: 364px) {
+            width: 80vw;
+            left: 10vw;
+            min-width: 0;
+        }
     }
     .take {
         left: 20vw;
