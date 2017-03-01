@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 14px; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.margin-top-bottom {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.margin-top {
+  margin-top: 60px; }
+
+.paragraph-grey {
+  color: #959595; }
+  .paragraph-grey h1 {
+    color: #222626; }
+
+.paragraph-white {
+  color: #fff; }
+  .paragraph-white h1 {
+    color: #fff; }
+
+.vertical, .vertical-white, .vertical-grey {
+  -ms-transform: translateX(-50%) rotate(-90deg);
+  -moz-transform: translateX(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+  transform: translateX(-50%) rotate(-90deg);
+  left: 40px;
+  top: 50%; }
+  @media (min-width: 1200px) and (max-width: 1240px) {
+    .vertical, .vertical-white, .vertical-grey {
+      left: 20px; } }
+  @media (min-width: 992px) and (max-width: 1040px) {
+    .vertical, .vertical-white, .vertical-grey {
+      left: 20px; } }
+  @media (max-width: 820px) {
+    .vertical, .vertical-white, .vertical-grey {
+      left: 20px; } }
+  .vertical p, .vertical-white p, .vertical-grey p {
+    font-size: smaller; }
+
+.vertical-white p {
+  color: #fff; }
+
+.vertical-grey p {
+  color: #959595; }
+
+.link-extra, .gallery .link-extra-bottom {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  .link-extra:after, .gallery .link-extra-bottom:after {
+    content: "\2192";
+    margin-left: 15px; }
+  .link-extra:hover, .gallery .link-extra-bottom:hover {
+    font-size: 110%;
+    color: #fff;
+    text-decoration: none; }
+
+.jumbotron .slogan {
+  color: white; }
+  .jumbotron .slogan h1 {
+    font-size: 300%;
+    text-shadow: 1px 1px 2px #000; }
+  .jumbotron .slogan p {
+    font-size: 100%;
+    text-shadow: 1px 1px 2px #000; }
+
+.header {
+  height: 100vh;
+  min-height: 400px;
+  width: 100%;
+  background: blue url("https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?h=350&auto=compress&cs=tinysrgb") center no-repeat;
+  background-size: cover; }
+  .header .picture {
+    bottom: -35%;
+    left: 50vw; }
+    .header .picture img {
+      height: 100vh;
+      width: auto; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .header .picture {
+        bottom: 10%; }
+        .header .picture img {
+          height: 80vh; } }
+    @media (max-width: 767px) {
+      .header .picture {
+        display: none; } }
+  .header .slogan {
+    top: 50vh;
+    left: 20vw;
+    width: 25vw;
+    min-width: 275px; }
+    @media (max-width: 767px) {
+      .header .slogan {
+        top: auto;
+        bottom: 10vh; } }
+    @media (max-width: 364px) {
+      .header .slogan {
+        width: 80vw;
+        left: 10vw;
+        min-width: 0; } }
+  .header .take {
+    left: 20vw;
+    top: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px #000; }
+    .header .take .text {
+      font-style: italic;
+      padding-left: 10px; }
+
+.description .second-col {
+  padding-top: 35vh; }
+  @media (max-width: 991px) {
+    .description .second-col {
+      padding-top: 0; } }
+
+.gallery-container {
+  height: 500px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .gallery-container {
+      height: 1000px; } }
+  @media (max-width: 767px) {
+    .gallery-container {
+      height: 1750px; } }
+
+.gallery {
+  width: 100vw;
+  color: #fff;
+  -moz-transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease; }
+  @media (max-width: 767px) {
+    .gallery {
+      left: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .gallery {
+      left: 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .gallery {
+      left: calc((100% - 970px) / 2); } }
+  @media (min-width: 1200px) {
+    .gallery {
+      left: calc((100% - 1170px) / 2); } }
+  .gallery h3 {
+    font-weight: 200; }
+  .gallery p {
+    font-size: 100%; }
+  .gallery .link-extra-bottom {
+    bottom: 20px; }
+  .gallery .row {
+    margin: 0;
+    height: 250px; }
+    .gallery .row [class*="col-"] {
+      padding: 30px;
+      height: 100%; }
+  .gallery:hover {
+    left: 0; }
+
+.color-1 {
+  background-color: #e25d7e; }
+
+.color-2 {
+  background-color: #5e717c; }
+
+.color-3 {
+  background-color: #bd8cbf; }
+
+.color-4 {
+  background-color: #82ca9c; }
+
+.img-1 {
+  background: blue url("https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?h=350&auto=compress&cs=tinysrgb") center no-repeat;
+  background-size: cover; }
+
+.img-2 {
+  background: blue url("https://images.pexels.com/photos/219610/pexels-photo-219610.jpeg?h=350&auto=compress&cs=tinysrgb") center no-repeat;
+  background-size: cover; }
+
+.img-3 {
+  background: blue url("https://images.pexels.com/photos/72958/pexels-photo-72958.jpeg?h=350&auto=compress&cs=tinysrgb") center no-repeat;
+  background-size: cover; }
+
+.advertising {
+  height: 100vh;
+  width: 100%;
+  background: blue url("https://images.pexels.com/photos/30820/pexels-photo-30820.jpg?h=350&auto=compress") center no-repeat;
+  background-size: cover; }
+  .advertising .container {
+    height: 100%; }
+  .advertising .slogan {
+    bottom: 10px;
+    left: 10px;
+    width: 50%; }
+    @media (max-width: 767px) {
+      .advertising .slogan {
+        width: 80%; } }
+
+.reasons {
+  background: #82ca9c;
+  margin-top: -30px; }
+
+.price-list {
+  background: #f6f7fa; }
+  .price-list .item, .price-list .item-legacy, .price-list .item-most-popular {
+    padding: 50px 80px 50px 50px; }
+  .price-list .item-legacy {
+    background: #f6f7fa; }
+  .price-list .item-most-popular {
+    background: #fff; }
+  .price-list .caption, .price-list .caption-legacy, .price-list .caption-most-popular {
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px; }
+  .price-list .caption-legacy {
+    background-color: #959595; }
+  .price-list .caption-most-popular {
+    background-color: #bd8cbf; }
+  .price-list .btn-green {
+    background-color: #82ca9c;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px; }
+  .price-list .icon-grey {
+    color: #959595;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 10px 0 0; }
+
+.footer {
+  background: #192431; }
+  .footer .ul-footer {
+    list-style: none;
+    padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
